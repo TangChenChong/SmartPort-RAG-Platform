@@ -2,7 +2,7 @@ server:
   port: 8081 # 指定端口号
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/PaiSmart?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/paismart?useSSL=false&serverTimezone=UTC
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -54,8 +54,8 @@ spring:
 
 minio:
     endpoint: http://localhost:9000
-    accessKey: minioadmin
-    secretKey: minioadmin
+    accessKey: root
+    secretKey: tangchenchong
     bucketName: uploads
     publicUrl: http://localhost:9000
 jwt:
@@ -75,7 +75,7 @@ file:
 elasticsearch:
   host: localhost       # Elasticsearch主机地址
   port: 9200            # Elasticsearch端口号
-  scheme: http          # 协议（http/https）
+  scheme: https          # 协议（http/https）
 
 logging:
   level:
